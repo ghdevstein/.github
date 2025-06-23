@@ -1,4 +1,4 @@
-name: "CI/CD Template"
+name: "GHDevstein CI/CD Template"
 description: "Run tests and deploy code to production"
 branding:
   icon: "play-circle"
