@@ -1,0 +1,13 @@
+# ghdevstein/.github/.github/workflows/reusable-ci.yml
+on:
+  workflow_call:
+    inputs:
+      node-version:
+        required: true
+        type: string
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "build with node ${{ inputs.node-version }}"
